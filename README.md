@@ -65,9 +65,11 @@ Here are some of the key API endpoints available in the system:
   - **Request Body:** 
     ```json
     {
-      "name": "Hotel Name",
-      "address": "Hotel Address",
-      "rating": 5
+    "address": "Road No. 2, Financial District, Gachibowli, Hyderabad, Nanakramguda, Telangana 500019",
+    "name": "Hyatt Hyderabad",
+    "email": "support-gachibowli@hyatt.com",
+    "latitude": 17.4180912,
+    "longitude": 78.3424841
     }
     ```
 
@@ -76,10 +78,10 @@ Here are some of the key API endpoints available in the system:
   - **Request Body:**
     ```json
     {
-      "firstName": "John",
-      "lastName": "Doe",
+      "first_name": "John",
+      "last_name": "Doe",
       "email": "john.doe@example.com",
-      "phoneNumber": "1234567890"
+      "phone_number": "1234567890"
     }
     ```
 
@@ -88,22 +90,22 @@ Here are some of the key API endpoints available in the system:
   - **Request Body:**
     ```json
     {
-      "hotelId": 1,
-      "roomNumber": "101",
-      "roomType": "Deluxe",
-      "price": 150.0
+      "price": 4000,
+      "type": "DOUBLE",
+      "hotel_id": 3,
+      "room_number": 101,
     }
     ```
 
 - **Book a Room**
-  - **Endpoint:** `POST /api/bookings`
+  - **Endpoint:** `POST /api/reservations`
   - **Request Body:**
     ```json
     {
       "customerId": 1,
       "roomId": 1,
-      "checkInDate": "2024-07-01",
-      "checkOutDate": "2024-07-05"
+      "check_in": "2024-07-01",
+      "check_out": "2024-07-05"
     }
     ```
 
