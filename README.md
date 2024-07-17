@@ -93,7 +93,7 @@ Here are some of the key API endpoints available in the system:
       "price": 4000,
       "type": "DOUBLE",
       "hotel_id": 3,
-      "room_number": 101,
+      "room_number": "101A",
     }
     ```
 
