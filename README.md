@@ -27,7 +27,6 @@ This project is a Hotel Reservation System that allows users to add hotels, cust
 - Java 11 or higher
 - Maven
 - PostgreSQL
-- Node.js and npm (for frontend)
 - Git
 
 ## Installation
