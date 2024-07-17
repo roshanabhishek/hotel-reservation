@@ -65,11 +65,11 @@ Here are some of the key API endpoints available in the system:
   - **Request Body:** 
     ```json
     {
-    "address": "Road No. 2, Financial District, Gachibowli, Hyderabad, Nanakramguda, Telangana 500019",
-    "name": "Hyatt Hyderabad",
-    "email": "support-gachibowli@hyatt.com",
-    "latitude": 17.4180912,
-    "longitude": 78.3424841
+       "address": "Road No. 2, Financial District, Gachibowli, Hyderabad, Nanakramguda, Telangana 500019",
+       "name": "Hyatt Hyderabad",
+       "email": "support-gachibowli@hyatt.com",
+       "latitude": 17.4180912,
+       "longitude": 78.3424841
     }
     ```
 
