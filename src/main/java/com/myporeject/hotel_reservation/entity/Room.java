@@ -18,6 +18,8 @@ public class Room {
     @NotNull(message = "Price is mandatory")
     private double price;
 
+    private String room_number;
+
     private boolean isAvailable;
 
     @ManyToOne
@@ -45,6 +47,8 @@ public class Room {
         this.type = type;
     }
 
+    public void setRoomNumber(String room_number) { this.room_number = room_number; }
+
     public void setAvailable(boolean available) {
         this.isAvailable = available;
     }
@@ -63,6 +67,10 @@ public class Room {
 
     public Hotel getHotel() {
         return hotel;
+    }
+
+    public String getRoomNumber() {
+        return room_number;
     }
 
     public boolean isAvailable() {

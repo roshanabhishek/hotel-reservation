@@ -24,6 +24,10 @@ public class RoomDTO {
     @JsonProperty("hotel_id")
     private Long hotelId;
 
+    @NotNull(message = "Room Number is mandatory")
+    @JsonProperty("room_number")
+    private String room_number;
+
     // Getters and Setters
     public double getPrice() {
         return price;
@@ -36,4 +40,6 @@ public class RoomDTO {
     public RoomType getType() {
         return type;
     }
+
+    public String getRoomNumber() { return room_number; }
 }

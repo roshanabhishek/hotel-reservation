@@ -38,6 +38,7 @@ public class RoomController {
         Room tempRoom = new Room();
         tempRoom.setPrice(createRoomRequest.getPrice());
         tempRoom.setType(createRoomRequest.getType());
+        tempRoom.setRoomNumber(createRoomRequest.getRoomNumber());
         tempRoom.setAvailable(true);
         Room createdRoom =  roomService.createRoom(createRoomRequest.getHotelId(), tempRoom);
         return ResponseEntity.status(HttpStatus.CREATED).body(createdRoom);
